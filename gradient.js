@@ -12,6 +12,7 @@ $(document).ready(function () {
     // setting the width and height to the screen
     document.getElementById("container").height = window.innerWidth;
     document.getElementById("container").width = window.innerHeight;
+    //document.getElementById("content").height = window.innerWidth;
     c.width = window.innerWidth;
     c.height = window.innerHeight;
 

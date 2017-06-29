@@ -4,7 +4,19 @@
 }
 canvas{
     display: block;
+    z-index: -10;
 }
 #container{
     overflow:hidden;
+    position: relative;
+}
+#content{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 50%; left: 0; bottom: 0; right: 0;
+    transform: translateY(-50%);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 300px;
 }
