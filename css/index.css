@@ -2,30 +2,56 @@
     margin: 0;
     padding: 0;
 }
-canvas{
+
+canvas {
     display: block;
     z-index: -10;
 }
-#container{
-    overflow:hidden;
+
+#container {
+    overflow: hidden;
     position: relative;
 }
-#content{
+
+#content {
     position: absolute;
     text-align: center;
     margin: auto;
-    top: 50%; left: 0; bottom: 0; right: 0;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
     transform: translateY(-50%);
     font-family: 'Raleway', sans-serif;
     color: white;
     font-size: 5em;
 }
 
-#content, p{
-   margin: 0;
+#refresh {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    color: white;
+    margin: 1%;
 }
 
-button{
+.fa-spin-hover:hover {
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+ }
+
+a {
+    color: white;
+}
+
+#content,
+p {
+    margin: 0;
+}
+
+button {
     color: white;
     background-color: transparent;
     border-color: white;
@@ -35,11 +61,11 @@ button{
     font-size: .3em;
 }
 
-@media screen and (min-width: 768px){
-    #content{
+@media screen and (min-width: 768px) {
+    #content {
         font-size: 10em;
     }
-    button{
+    button {
         font-size: .5em;
         width: 5em;
     }
