@@ -12,7 +12,6 @@ canvas {
 }
 
 #container {
-
     position: relative;
     padding: 0;
     margin: 0;
@@ -60,76 +59,87 @@ canvas {
     font-size: .3em;
 }
 
-.x-closer{
+.x-closer {
     position: absolute;
-    top:1%;
-    left:1%;
+    top: 1%;
+    left: 1%;
     color: white;
     font-size: 2em;
 }
 
-#overlay{
+#overlay {
     margin: auto;
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 70%; /* Full width (cover the whole page) */
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 70%;
+    /* Full width (cover the whole page) */
     /*height: 80%; /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, .1); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+    background-color: rgba(255, 255, 255, .1);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
     border-radius: 10px;
 }
 
-#overlay a{
-    color:black;
+#overlay a {
+    color: black;
 }
 
-#overlayAbout{
+#overlayAbout {
     margin: auto;
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 70%; /* Full width (cover the whole page) */
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 70%;
+    /* Full width (cover the whole page) */
     /*height: 80%; /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, .1); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+    background-color: rgba(255, 255, 255, .1);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
     border-radius: 10px;
 }
 
-.main{
+.main {
     position: absolute;
     width: 80%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     margin: auto;
 }
 
-.row{
-    height:80%;
+.row {
+    height: 80%;
 }
+
 .col-sm-6:hover {
     box-shadow: 2px 2px 20px black;
-    color:black;
-
+    color: black;
     transition: box-shadow .5s linear;
-    
 }
-.col-sm-6 p{
+
+.col-sm-6 p {
     visibility: hidden;
     opacity: 0;
 }
 
-.col-sm-6:hover p{
-    
+.col-sm-6:hover p {
     visibility: visible;
     opacity: 1;
     transition: opacity .6s linear;
@@ -147,27 +157,33 @@ img {
     margin: 1%;
 }
 
-.text-center{
+.text-center {
     text-align: center;
     position: absolute;
     width: 80%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     margin: auto;
 }
 
-.text-center img{
+.text-center img {
     margin: auto;
 }
 
-.text-center a { 
+.text-center a {
     color: white;
 }
-.text-center a:active{
+
+.text-center a:active {
     color: white;
 }
-.text-center a:hover{
+
+.text-center a:hover {
+    color: white;
+}
+
+.text-center a:visited {
     color: white;
 }
 
@@ -176,7 +192,16 @@ img {
     -moz-animation: fa-spin 2s infinite linear;
     -o-animation: fa-spin 2s infinite linear;
     animation: fa-spin 2s infinite linear;
-  }
+}
+
+#icons{
+    margin-top:3%;
+    color: black;
+}
+
+#icons a{
+    padding: 5%;
+}
 
 @media screen and (min-width: 768px) {
     #content {
