@@ -1,11 +1,14 @@
 // JavaScript source code
 
 // create global variable to store the random colors
-var colors;
+var colfunc;
 
 // function to call the JSON file
-$(document).ready(function () {
+window.onload = function () {
+    reset();
+};
 
+reset = function () {
     // calling the canvas element
     var c = document.getElementById("canvas");
 
@@ -33,5 +36,20 @@ $(document).ready(function () {
         ctx.fillStyle = my_gradient;
         ctx.fillRect(0, 0, c.width, c.height);
     });
-    //console.log(colors);
-});
+};
+
+on = function () {
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("content").style.display = "none";
+};
+
+off = function () {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("content").style.display = "block";
+    document.getElementById("overlayAbout").style.display = "none";
+}
+
+onAbout = function () {
+    document.getElementById("overlayAbout").style.display = "block";
+    document.getElementById("content").style.display = "none";
+};

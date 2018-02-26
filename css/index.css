@@ -1,16 +1,22 @@
 ﻿body {
     margin: 0;
     padding: 0;
+    color: white;
+    overflow: hidden;
 }
 
 canvas {
     display: block;
     z-index: -10;
+    overflow: auto;
 }
 
 #container {
-    overflow: hidden;
+
     position: relative;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
 }
 
 #content {
@@ -32,26 +38,19 @@ canvas {
     text-align: left;
     top: 0;
     color: white;
+    font-size: 2em;
     margin: 1%;
 }
 
-.fa-spin-hover:hover {
-    -webkit-animation: spin 2s infinite linear;
-    -moz-animation: spin 2s infinite linear;
-    -o-animation: spin 2s infinite linear;
-    animation: spin 2s infinite linear;
- }
-
-a {
+#refresh a {
     color: white;
 }
 
-#content,
-p {
+#content p {
     margin: 0;
 }
 
-button {
+#content button {
     color: white;
     background-color: transparent;
     border-color: white;
@@ -60,6 +59,124 @@ button {
     width: 5em;
     font-size: .3em;
 }
+
+.x-closer{
+    position: absolute;
+    top:1%;
+    left:1%;
+    color: white;
+    font-size: 2em;
+}
+
+#overlay{
+    margin: auto;
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 70%; /* Full width (cover the whole page) */
+    /*height: 80%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .1); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    border-radius: 10px;
+}
+
+#overlay a{
+    color:black;
+}
+
+#overlayAbout{
+    margin: auto;
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 70%; /* Full width (cover the whole page) */
+    /*height: 80%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .1); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    border-radius: 10px;
+}
+
+.main{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+}
+
+.row{
+    height:80%;
+}
+.col-sm-6:hover {
+    box-shadow: 2px 2px 20px black;
+    color:black;
+
+    transition: box-shadow .5s linear;
+    
+}
+.col-sm-6 p{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.col-sm-6:hover p{
+    
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .6s linear;
+}
+
+.col-sm-6 {
+    margin-bottom: 5%;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    margin: 1%;
+}
+
+.text-center{
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+}
+
+.text-center img{
+    margin: auto;
+}
+
+.text-center a { 
+    color: white;
+}
+.text-center a:active{
+    color: white;
+}
+.text-center a:hover{
+    color: white;
+}
+
+#spin:hover {
+    -webkit-animation: fa-spin 2s infinite linear;
+    -moz-animation: fa-spin 2s infinite linear;
+    -o-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+  }
 
 @media screen and (min-width: 768px) {
     #content {

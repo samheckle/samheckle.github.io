@@ -9,23 +9,100 @@
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/79f65dcd14.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="gradient.js"></script>
 </head>
 
 <body>
     <div id="container">
-        <div id="refresh">
-                <a href="index.html"><i class="fa fa-refresh fa-2x fa-spin-hover" aria-hidden="true"></i></a>
+        <div id="refresh" onclick=reset()>
+            <i id="spin" class="fas fa-sync"></i>
         </div>
         <div id="content">
             <p>Sam Heckle</p>
-            <a href="portfolio.html"><button>Portfolio</button></a>
-            <a href="about.html"><button>About</button></a>
+            <button onclick=on()>Portfolio</button>
+            <button onclick=onAbout()>About</button>
         </div>
         <canvas id="canvas"></canvas>
-    </div>
+        <div id="overlay">
+            <div class="x-closer">
+                <i class="fas fa-times" onclick=off()></i>
+            </div>
 
+            <div class="main">
+
+                <div class="row">
+                    <a href="https://devpost.com/software/stealth-hq0w38">
+                        <div class="col-sm-6">
+                            <img src="media/stealth.png" class="img-responsive" style="width:100%" alt="visualizer">
+                            <h3 class="center"> STEALTH </h3>
+                            <p>A web-application where women can to search anonymously for help regarding domestic abuse.</p>
+                            <!--<p class="check-it">Check out our <a href="https://devpost.com/software/stealth-hq0w38">hackathon submission!</a></p> -->
+                        </div>
+                    </a>
+                    <a href="https://hawkdanny.itch.io/speak-up-people-listen">
+                        <div class="col-sm-6">
+                            <img src="media/speak.png" class="img-responsive" style="width:100%" alt="speak">
+                            <h3 class="center"> Listen, Please</h3>
+                            <p>An interactive story created in Unity that explores the lives of people affected by the Trump
+                                administration.
+                            </p>
+                            <!-- <p>Tools: C#, Unity</p>
+                            <p class="check-it">Check out our
+                                <a href="https://hawkdanny.itch.io/speak-up-people-listen">itch.io!</a>
+                            </p> -->
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="media/map.png" class="img-responsive" style="width:100%" alt="election">
+                        <h3 class="center"> Election 2016 Voter Map </h3>
+                        <p>A data visualizaion about the 2016 election regarding party votes by county.
+                        </p>
+                        <!-- <p>Tools: Javascript, d3.js, HTML/CSS</p>
+                            <p class="check-it">Check out this
+                                <a href="https://people.rit.edu/~sxh4716/230/election2016/index.html">project!</a>
+                            </p> -->
+
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="media/trump.png" class="img-responsive" style="width:100%" alt="trump">
+                        <h3 class="center"> Trump or Not Trump </h3>
+                        <p>A web app using the Twitter api to generate a tweet where the player had to guess if it was Donald
+                            Trump or from the #MakeAmericaGreatAgain. </p>
+                        <!-- <p>Tools: Python, Flask, HTML/CSS</p> -->
+
+                        <!-- <p class="check-it"> Check out my
+                                <a href="https://github.com/theheckle/trump-or-not">GitHub repo!</a>
+                            </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlayAbout">
+            <div class="x-closer">
+                <i class="fas fa-times" onclick=off()></i>
+            </div>
+            <div class="text-center">
+                <div>
+                    <img src="media/IMG_1142.jpg" class="img-responsive rounded img-circle" alt="me">
+                </div>
+                <h1>hi my name is sam</h1>
+                <h1>here is my
+                    <a href="media/Heckle_Resume.pdf" type="application/pdf">resume</a>
+                </h1>
+            </div>
+
+        </div>
+    </div>
 </body>
+
 
 </html>
