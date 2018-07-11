@@ -63,7 +63,7 @@ canvas {
     position: absolute;
     top: 1%;
     left: 1%;
-    color: white;
+    color: black;
     font-size: 2em;
 }
 
@@ -80,13 +80,15 @@ canvas {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, .1);
+    /*background-color: rgba(255, 255, 255, .7);*/
     /* Black background with opacity */
     z-index: 2;
     /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer;
-    /* Add a pointer on hover */
-    border-radius: 10px;
+    /* Add a pointer on hover 
+    border-radius: 10px; */
+
+    font-family: 'Raleway', sans-serif;
 }
 
 #overlay a {
@@ -117,19 +119,29 @@ canvas {
 
 .main {
     position: absolute;
-    width: 80%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: auto;
 }
 
 .row {
     height: 80%;
+    margin:1% !important;
+
+    background-color:white;
+    
+}
+
+.col-sm-6 {
+    color: black;
+    padding: 0 !important;
+    margin: auto !important;
+    margin: 1%;
 }
 
 .col-sm-6:hover {
-    box-shadow: 2px 2px 20px black;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
     color: black;
     transition: box-shadow .5s linear;
 }
@@ -137,25 +149,32 @@ canvas {
 .col-sm-6 p {
     visibility: hidden;
     opacity: 0;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .col-sm-6:hover p {
     visibility: visible;
     opacity: 1;
-    transition: opacity .6s linear;
-}
-
-.col-sm-6 {
-    margin-bottom: 5%;
-    color: black;
+    transition: opacity .5s linear;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 img {
     margin: 1%;
+}
+
+.img-responsive {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .text-center {
@@ -195,12 +214,12 @@ img {
     animation: fa-spin 2s infinite linear;
 }
 
-#icons{
-    margin-top:3%;
+#icons {
+    margin-top: 3%;
     color: black;
 }
 
-#icons a{
+#icons a {
     padding: 5%;
 }
 
