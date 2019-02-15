@@ -407,7 +407,7 @@ electionMap.prototype.tooltip = function (d) {
 
 function init() {
 
-    d3.json("http://http://samheckle.com/election/static/js/us2016.topo.json", function (error, us) {
+    d3.json("http://samheckle.com/election/static/js/us2016.topo.json", function (error, us) {
         if (error) throw error;
 
 
