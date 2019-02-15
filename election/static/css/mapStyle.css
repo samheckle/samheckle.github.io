@@ -1,0 +1,42 @@
+.background {
+    fill: #FFF;
+}
+
+.map-target {
+    width: 100%;
+    position: relative;
+}
+
+.home-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 4px 8px;
+    background-color: #fff;
+    z-index: 2;
+    text-align: center;
+    border: 1px solid #CCC;
+    display: none;
+}
+
+.map-g .feature {
+    stroke: #FFF;
+    cursor: zoom-in;
+}
+
+.map-g .feature.active {
+    stroke: #000;
+}
+
+.map-g.zoomed .background {
+    cursor: zoom-out;
+}
+
+.map-g.zoomed .feature.centered {
+    cursor: zoom-out;
+}
