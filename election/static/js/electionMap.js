@@ -1,7 +1,7 @@
 var countygeos = [];
 var electiondata = [];
 var colordata = [];
-
+var stateData;
 var electionMap = function (opts) {
 
     // load in arguments from config object
@@ -388,15 +388,18 @@ electionMap.prototype.zoomScale = function (k, x, y) {
 
 }
 
-
-
-
 electionMap.prototype.tooltip = function (d) {
 
     var txt;
 
+
     if (this.view === "states") {
-        txt = "State FIPS: " + d.id;
+        // txt = "State: " + d.id;
+        for(let i = 0; i < stateData.length; i++){
+            if(stateData[i].id == d.id){
+                txt = stateData[i].state;
+            }
+        }
     } else if (this.view === "counties") {
         txt = "County FIPS: " + d.id;
     }
@@ -406,6 +409,11 @@ electionMap.prototype.tooltip = function (d) {
 }
 
 function init() {
+
+    d3.json("static/js/statefips.json", function(data) {
+        // console.log(data)
+        stateData = data;
+    });
 
     d3.json("http://samheckle.com/election/static/js/us2016.topo.json", function (error, us) {
         if (error) throw error;
@@ -443,8 +451,6 @@ function init() {
                 colordata.push("Dem");
             }
         }
-
-
     });
 }
 

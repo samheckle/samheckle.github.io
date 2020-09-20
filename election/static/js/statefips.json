@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "state": "Alabama",
+    "acr": "AL"
+  },
+  {
+    "id": 2,
+    "state": "Alaska",
+    "acr": "AK"
+  },
+  {
+    "id": 4,
+    "state": "Arizona",
+    "acr": "AZ"
+  },
+  {
+    "id": 5,
+    "state": "Arkansas",
+    "acr": "AR"
+  },
+  {
+    "id": 6,
+    "state": "California",
+    "acr": "CA"
+  },
+  {
+    "id": 8,
+    "state": "Colorado",
+    "acr": "CO"
+  },
+  {
+    "id": 9,
+    "state": "Connecticut",
+    "acr": "CT"
+  },
+  {
+    "id": 10,
+    "state": "Delaware",
+    "acr": "DE"
+  },
+  {
+    "id": 12,
+    "state": "Florida",
+    "acr": "FL"
+  },
+  {
+    "id": 13,
+    "state": "Georgia",
+    "acr": "GA"
+  },
+  {
+    "id": 15,
+    "state": "Hawaii",
+    "acr": "HI"
+  },
+  {
+    "id": 16,
+    "state": "Idaho",
+    "acr": "ID"
+  },
+  {
+    "id": 17,
+    "state": "Illinois",
+    "acr": "IL"
+  },
+  {
+    "id": 18,
+    "state": "Indiana",
+    "acr": "IN"
+  },
+  {
+    "id": 19,
+    "state": "Iowa",
+    "acr": "IA"
+  },
+  {
+    "id": 20,
+    "state": "Kansas",
+    "acr": "KS"
+  },
+  {
+    "id": 21,
+    "state": "Kentucky",
+    "acr": "KY"
+  },
+  {
+    "id": 22,
+    "state": "Louisiana",
+    "acr": "LA"
+  },
+  {
+    "id": 23,
+    "state": "Maine",
+    "acr": "ME"
+  },
+  {
+    "id": 24,
+    "state": "Maryland",
+    "acr": "MD"
+  },
+  {
+    "id": 25,
+    "state": "Massachusetts",
+    "acr": "MA"
+  },
+  {
+    "id": 26,
+    "state": "Michigan",
+    "acr": "MI"
+  },
+  {
+    "id": 27,
+    "state": "Minnesota",
+    "acr": "MN"
+  },
+  {
+    "id": 28,
+    "state": "Mississippi",
+    "acr": "MS"
+  },
+  {
+    "id": 29,
+    "state": "Missouri",
+    "acr": "MO"
+  },
+  {
+    "id": 30,
+    "state": "Montana",
+    "acr": "MT"
+  },
+  {
+    "id": 31,
+    "state": "Nebraska",
+    "acr": "NE"
+  },
+  {
+    "id": 32,
+    "state": "Nevada",
+    "acr": "NV"
+  },
+  {
+    "id": 33,
+    "state": "New Hampshire",
+    "acr": "NH"
+  },
+  {
+    "id": 34,
+    "state": "New Jersey",
+    "acr": "NJ"
+  },
+  {
+    "id": 35,
+    "state": "New Mexico",
+    "acr": "NM"
+  },
+  {
+    "id": 36,
+    "state": "New York",
+    "acr": "NY"
+  },
+  {
+    "id": 37,
+    "state": "North Carolina",
+    "acr": "NC"
+  },
+  {
+    "id": 38,
+    "state": "North Dakota",
+    "acr": "ND"
+  },
+  {
+    "id": 39,
+    "state": "Ohio",
+    "acr": "OH"
+  },
+  {
+    "id": 40,
+    "state": "Oklahoma",
+    "acr": "OK"
+  },
+  {
+    "id": 41,
+    "state": "Oregon",
+    "acr": "OR"
+  },
+  {
+    "id": 42,
+    "state": "Pennsylvania",
+    "acr": "PA"
+  },
+  {
+    "id": 44,
+    "state": "Rhode Island",
+    "acr": "RI"
+  },
+  {
+    "id": 45,
+    "state": "South Carolina",
+    "acr": "SC"
+  },
+  {
+    "id": 46,
+    "state": "South Dakota",
+    "acr": "SD"
+  },
+  {
+    "id": 47,
+    "state": "Tennessee",
+    "acr": "TN"
+  },
+  {
+    "id": 48,
+    "state": "Texas",
+    "acr": "TX"
+  },
+  {
+    "id": 49,
+    "state": "Utah",
+    "acr": "UT"
+  },
+  {
+    "id": 50,
+    "state": "Vermont",
+    "acr": "VT"
+  },
+  {
+    "id": 51,
+    "state": "Virginia",
+    "acr": "VA"
+  },
+  {
+    "id": 53,
+    "state": "Washington",
+    "acr": "WA"
+  },
+  {
+    "id": 54,
+    "state": "West Virginia",
+    "acr": "WV"
+  },
+  {
+    "id": 55,
+    "state": "Wisconsin",
+    "acr": "WI"
+  },
+  {
+    "id": 56,
+    "state": "Wyoming",
+    "acr": "WY"
+  },
+  {
+    "id": 60,
+    "state": "American Samoa",
+    "acr": "AS"
+  },
+  {
+    "id": 66,
+    "state": "Guam",
+    "acr": "GU"
+  },
+  {
+    "id": 69,
+    "state": "Northern Mariana Islands",
+    "acr": "MP"
+  },
+  {
+    "id": 72,
+    "state": "Puerto Rico",
+    "acr": "PR"
+  },
+  {
+    "id": 78,
+    "state": "Virgin Islands",
+    "acr": "VI"
+  }
+]
