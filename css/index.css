@@ -1,234 +1,243 @@
 ﻿body {
-    margin: 0;
-    padding: 0;
-    color: white;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow: hidden;
 }
 
 canvas {
-    display: block;
-    z-index: -10;
-    overflow: auto;
+  display: block;
+  z-index: -10;
+  overflow: auto;
 }
 
 #container {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    bottom: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
 }
 
 #content {
-    position: absolute;
-    text-align: center;
-    margin: auto;
-    top: 50%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform: translateY(-50%);
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-size: 5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 5em;
 }
 
-#refresh {
-    position: absolute;
-    text-align: left;
-    top: 0;
-    color: white;
-    font-size: 2em;
-    margin: 1%;
-}
-
-#refresh a {
-    color: white;
-}
-
-#content p {
-    margin: 0;
-}
-
-#content button {
-    color: white;
-    background-color: transparent;
-    border-color: white;
-    border-style: solid;
-    border-width: .1em;
-    width: 5em;
+p.fluff {
     font-size: .3em;
 }
 
+#refresh {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  color: white;
+  font-size: 2em;
+  margin: 1%;
+}
+
+#refresh a {
+  color: white;
+}
+
+#content p {
+  margin: 0;
+}
+
+#content button {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.1em;
+  width: 5em;
+  font-size: 0.3em;
+}
+
 .x-closer {
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    color: black;
-    font-size: 2em;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  color: black;
+  font-size: 2em;
 }
 
 #overlay {
-    margin: auto;
-    position: fixed;
-    /* Sit on top of the page content */
-    display: none;
-    /* Hidden by default */
-    width: 70%;
-    /* Full width (cover the whole page) */
-    /*height: 80%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /*background-color: rgba(255, 255, 255, .7);*/
-    /* Black background with opacity */
-    z-index: 2;
-    /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer;
-    /* Add a pointer on hover 
+  margin: auto;
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 70%;
+  /* Full width (cover the whole page) */
+  /*height: 80%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*background-color: rgba(255, 255, 255, .7);*/
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover 
     border-radius: 10px; */
 
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #overlay a {
-    color: black;
+  color: black;
 }
 
 #overlayAbout {
-    margin: auto;
-    position: fixed;
-    /* Sit on top of the page content */
-    display: none;
-    /* Hidden by default */
-    width: 70%;
-    /* Full width (cover the whole page) */
-    /*height: 80%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, .1);
-    /* Black background with opacity */
-    z-index: 2;
-    /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer;
-    /* Add a pointer on hover */
-    border-radius: 10px;
+  margin: auto;
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 70%;
+  /* Full width (cover the whole page) */
+  /*height: 80%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  border-radius: 10px;
 }
 
 .main {
-    position: absolute;
-    width: 90%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .row {
-    height: 80%;
-    margin:1% !important;
+  height: 80%;
+  margin: 1% !important;
 
-    background-color:white;
-    
+  background-color: white;
 }
 
 .col-sm-6 {
-    color: black;
-    padding: 0 !important;
-    margin: auto !important;
-    margin: 1%;
+  color: black;
+  padding: 0 !important;
+  margin: auto !important;
+  margin: 1%;
 }
 
 .col-sm-6:hover {
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-    color: black;
-    transition: box-shadow .5s linear;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  color: black;
+  transition: box-shadow 0.5s linear;
 }
 
 .col-sm-6 p {
-    visibility: hidden;
-    opacity: 0;
-    padding-left: 3%;
-    padding-right: 3%;
+  visibility: hidden;
+  opacity: 0;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .col-sm-6:hover p {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .5s linear;
-    padding-left: 3%;
-    padding-right: 3%;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 h3 {
-    text-align: left;
-    padding-left: 3%;
-    padding-right: 3%;
+  text-align: left;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 img {
-    margin: 1%;
+  margin: 1%;
 }
 
 .img-responsive {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .text-center {
-    text-align: center;
-    position: absolute;
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
 }
 
 .text-center img {
-    margin: auto;
+  margin: auto;
 }
 
 .text-center a {
-    color: white;
+  color: white;
 }
 
 .text-center a:active {
-    color: white;
+  color: white;
 }
 
 .text-center a:hover {
-    color: white;
+  color: white;
 }
 
 .text-center a:visited {
-    color: white;
+  color: white;
 }
 
 #spin:hover {
-    -webkit-animation: fa-spin 2s infinite linear;
-    -moz-animation: fa-spin 2s infinite linear;
-    -o-animation: fa-spin 2s infinite linear;
-    animation: fa-spin 2s infinite linear;
+  -webkit-animation: fa-spin 2s infinite linear;
+  -moz-animation: fa-spin 2s infinite linear;
+  -o-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
 }
 
 #icons {
-    margin-top: 3%;
-    color: black;
+  margin-top: 3%;
+  color: black;
 }
 
 #icons a {
-    padding: 5%;
+  padding: 5%;
 }
 
 @media screen and (min-width: 768px) {
-    #content {
-        font-size: 10em;
-    }
-    button {
-        font-size: .5em;
-        width: 5em;
-    }
+  p.fluff {
+      font-size: .5em;
+  }
+  #content {
+    font-size: 10em;
+  }
+  button {
+    font-size: 0.5em;
+    width: 5em;
+  }
 }
